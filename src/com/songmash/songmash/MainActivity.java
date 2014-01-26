@@ -22,20 +22,12 @@ public class MainActivity extends Activity {
 	private ProgressDialog pd;
 	private Activity currentActivity = this;
 	
-	/*static {
-		try {
-			battleManager = BattleManager.getInstance();
-		} catch (NoMp3sFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}*/
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
+		// Async task to initialize battlemanager which involves reading all the mp3 files from the SD card. 
 		AsyncTask<Void, Void, Void> battleManagerInitializerTask = new AsyncTask<Void, Void, Void>() {
 
 			@Override
