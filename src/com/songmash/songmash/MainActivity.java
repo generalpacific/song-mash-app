@@ -56,14 +56,15 @@ public class MainActivity extends Activity {
 				if (pd!=null) {
 					pd.dismiss();
 				}
+				nextBattle();
 			}
 			
 		};
 		
 		battleManagerInitializerTask.execute((Void[])null);
 		
-		final Button button3 = (Button)findViewById(R.id.button3);
-		button3.setOnClickListener(new OnClickListener() {
+		final Button viewRankedListButton = (Button)findViewById(R.id.button3);
+		viewRankedListButton.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
@@ -96,13 +97,15 @@ public class MainActivity extends Activity {
 				nextBattle();
 			}
 		});
+		
 	}
 
 	private void nextBattle() {
 		Battle battle = battleManager.nextBattle();
 		if(battle == null) {
-			// TODO handle null
-			return;
+			// Start rankDisplayActivity
+			Intent intent = new Intent(getApplicationContext(), RankDisplayActivity.class);
+		    startActivity(intent);
 		}
 		currentBattle = battle;
 		TextView song1View = (TextView)findViewById(R.id.Song1);

@@ -14,26 +14,30 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="40dp"
+        android:textColor="#0CF414"
+        android:textSize="20sp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="10dp"
-        android:text="Large Text"/>
+        android:text=""/>
 
     <TextView
         android:id="@+id/Song2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
+        android:textColor="#F40C0C"
+        android:textSize="20sp"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="100dp"
         android:layout_below="@id/Song1"
-        android:text="Large Text"/>
+        android:text=""/>
 
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/Song1"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="30dp"
         android:text="@string/vote" />
 
     <Button
@@ -41,7 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/Song2"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="30dp"
         android:text="@string/vote" />
 
     <Button

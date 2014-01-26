@@ -7,5 +7,6 @@
     <string name="title_activity_rank_display">RankDisplayActivity</string>
     <string name="vote">Vote</string>
     <string name="view_ranked_list">View Ranked List</string>
+    <string name="header">All battles between songs done. Final Ranking.</string>
 
 </resources>
