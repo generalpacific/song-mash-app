@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SongMash</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_rank_display">RankDisplayActivity</string>
+    <string name="vote">Vote</string>
+    <string name="view_ranked_list">View Ranked List</string>
+
+</resources>
