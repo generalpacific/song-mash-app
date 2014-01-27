@@ -18,6 +18,7 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
 
 	private static BattleManager battleManager = null;
+	private static boolean noMp3sPresent = false;
 	private Battle currentBattle = null;
 	private ProgressDialog pd;
 	private Activity currentActivity = this;
@@ -45,8 +46,7 @@ public class MainActivity extends Activity {
 				try {
 					battleManager = BattleManager.getInstance();
 				} catch (NoMp3sFoundException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+					noMp3sPresent = true;
 				}
 				return null;
 			}
@@ -56,7 +56,13 @@ public class MainActivity extends Activity {
 				if (pd!=null) {
 					pd.dismiss();
 				}
-				nextBattle();
+				if(noMp3sPresent) {
+					// If no mp3s found start no Mp3s found activity.
+					Intent intent = new Intent(getApplicationContext(), NoMp3Activity.class);
+				    startActivity(intent);
+				}else {				
+					nextBattle();
+				}
 			}
 			
 		};
@@ -101,6 +107,9 @@ public class MainActivity extends Activity {
 	}
 
 	private void nextBattle() {
+		if(noMp3sPresent) {
+			return;
+		}
 		Battle battle = battleManager.nextBattle();
 		if(battle == null) {
 			// Start rankDisplayActivity

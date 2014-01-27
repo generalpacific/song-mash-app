@@ -8,5 +8,7 @@
     <string name="vote">Vote</string>
     <string name="view_ranked_list">View Ranked List</string>
     <string name="header">All battles between songs done. Final Ranking.</string>
+    <string name="title_activity_no_mp3">NoMp3Activity</string>
+    <string name="noMp3s">No MP3s Found on the SD Card. Add mp3s and restart the app.</string>
 
 </resources>
