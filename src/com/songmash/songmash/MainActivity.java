@@ -1,6 +1,7 @@
 package com.songmash.songmash;
 
 import com.songmash.songmash.battlemanager.BattleManager;
+import com.songmash.songmash.constants.StringConstants;
 import com.songmash.songmash.datastructure.Battle;
 import com.songmash.songmash.filesystem.NoMp3sFoundException;
 
@@ -69,6 +70,7 @@ public class MainActivity extends Activity {
 		
 		battleManagerInitializerTask.execute((Void[])null);
 		
+		// View ranked button activity starts the RankDisplay activity
 		final Button viewRankedListButton = (Button)findViewById(R.id.button3);
 		viewRankedListButton.setOnClickListener(new OnClickListener() {
 			
@@ -82,6 +84,7 @@ public class MainActivity extends Activity {
 			}
 		});
 		
+		// Update rating for song1 when button1 is pressed
 		final Button button1 = (Button)findViewById(R.id.button1);
 		button1.setOnClickListener(new OnClickListener() {
 			@Override
@@ -93,6 +96,7 @@ public class MainActivity extends Activity {
 			}
 		});
 		
+		// Update the rating for song2 when button2 is pressed.
 		final Button button2 = (Button)findViewById(R.id.button2);
 		button2.setOnClickListener(new OnClickListener() {
 			@Override
@@ -114,6 +118,7 @@ public class MainActivity extends Activity {
 		if(battle == null) {
 			// Start rankDisplayActivity
 			Intent intent = new Intent(getApplicationContext(), RankDisplayActivity.class);
+			intent.putExtra(StringConstants.ARE_BATTLES_DONE, true);
 		    startActivity(intent);
 		    return;
 		}

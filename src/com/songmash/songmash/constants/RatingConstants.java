@@ -1,5 +1,10 @@
 package com.songmash.songmash.constants;
 
+/**
+ * All constants used for calculating the updated rating
+ * @author prashant
+ *
+ */
 public final class RatingConstants {
 	private RatingConstants() {
 		
