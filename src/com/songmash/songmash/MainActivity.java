@@ -115,6 +115,7 @@ public class MainActivity extends Activity {
 			// Start rankDisplayActivity
 			Intent intent = new Intent(getApplicationContext(), RankDisplayActivity.class);
 		    startActivity(intent);
+		    return;
 		}
 		currentBattle = battle;
 		TextView song1View = (TextView)findViewById(R.id.Song1);
