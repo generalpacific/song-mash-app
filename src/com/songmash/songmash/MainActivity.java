@@ -19,6 +19,7 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
 
 	private static BattleManager battleManager = null;
+	private static int battleNum = 1; 
 	private static boolean noMp3sPresent = false;
 	private Battle currentBattle = null;
 	private ProgressDialog pd;
@@ -127,6 +128,10 @@ public class MainActivity extends Activity {
 		TextView song2View = (TextView)findViewById(R.id.Song2);
 		song1View.setText(battleManager.getSong(battle.getSong1()).getTitle());
 		song2View.setText(battleManager.getSong(battle.getSong2()).getTitle());
+		// Set the header
+		TextView header = (TextView)findViewById(R.id.header);
+		header.setText(getString(R.string.battle) + " " + battleNum);
+		battleNum++;
 	}
 	
 	@Override
