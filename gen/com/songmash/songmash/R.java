@@ -49,11 +49,15 @@ public final class R {
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
+        public static final int allBattlesDone=0x7f05000c;
         public static final int app_name=0x7f050000;
         public static final int battle=0x7f050009;
         public static final int header=0x7f050006;
         public static final int hello_world=0x7f050002;
+        public static final int mp3Read=0x7f05000a;
         public static final int noMp3s=0x7f050008;
+        public static final int pleaseWait=0x7f05000b;
+        public static final int presentRankings=0x7f05000d;
         public static final int title_activity_no_mp3=0x7f050007;
         public static final int title_activity_rank_display=0x7f050003;
         public static final int view_ranked_list=0x7f050005;

@@ -11,5 +11,8 @@
     <string name="title_activity_no_mp3">NoMp3Activity</string>
     <string name="noMp3s">No MP3s Found on the SD Card. Add mp3s and restart the app.</string>
     <string name="battle">BATTLE</string>
-
+    <string name="mp3Read">Reading MP3 files from SD card..</string>
+    <string name="pleaseWait">Please wait.</string>
+    <string name="allBattlesDone">All the battles are done. This is the Final Ranking. Restart the app to reset ratings.</string>
+    <string name="presentRankings">Present Rankings</string>
 </resources>

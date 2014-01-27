@@ -36,8 +36,8 @@ public class MainActivity extends Activity {
 			@Override
 			protected void onPreExecute() {
 				pd = new ProgressDialog(currentActivity);
-				pd.setTitle("Reading MP3 files from SD card..");
-				pd.setMessage("Please wait.");
+				pd.setTitle(getString(R.string.mp3Read));
+				pd.setMessage(getString(R.string.pleaseWait));
 				pd.setCancelable(false);
 				pd.setIndeterminate(true);
 				pd.show();

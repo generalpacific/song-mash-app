@@ -38,9 +38,9 @@ public class RankDisplayActivity extends Activity {
 			
 			TextView textView2 = (TextView)findViewById(R.id.textView2);
 			if(areBattlesDone) {
-				textView2.setText("All the battles are done. This is the Final Ranking. Restart the app to reset ratings.");
+				textView2.setText(getString(R.string.allBattlesDone));
 			}else {
-				textView2.setText("Present Rankings");
+				textView2.setText(getString(R.string.presentRankings));
 			}
 			
 		} catch (NoMp3sFoundException e) {
