@@ -39,6 +39,13 @@
         android:layout_below="@+id/Song1"
         android:layout_marginTop="30dp"
         android:text="@string/vote" />
+    
+   <View
+       android:id="@+id/horizontal1"
+       android:layout_width="fill_parent"
+       android:layout_height="2dp"
+       android:layout_below="@id/button1"
+       android:background="@android:color/black" />
 
     <Button
         android:id="@+id/button2"
@@ -47,6 +54,13 @@
         android:layout_below="@+id/Song2"
         android:layout_marginTop="30dp"
         android:text="@string/vote" />
+    
+    <View
+       android:id="@+id/horizontal2"
+       android:layout_width="fill_parent"
+       android:layout_height="2dp"
+       android:layout_below="@id/button2"
+       android:background="@android:color/black" />
 
     <Button
         android:id="@+id/button3"
